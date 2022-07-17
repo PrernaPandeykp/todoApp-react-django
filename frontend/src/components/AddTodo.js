@@ -1,4 +1,4 @@
-import react, {useState} from 'react'
+import {useState} from 'react'
 import React from 'react';
 import {Form ,Button} from 'react-bootstrap'
 
@@ -7,11 +7,12 @@ const AddTodo = ({ addTodo }) => {
     const [description,setDescription] =useState('')
 
     const addTodoHandler = e=>{
-        e.preventdefault()
+        e.preventDefault()
         addTodo({
             title,
             description,
-            completed:false,
+            completed: false,
+            favourite : false,
         })
     }
     return (
@@ -19,13 +20,13 @@ const AddTodo = ({ addTodo }) => {
         <Form>
             <Form.Group controlId='title'>
                 <Form.Label>Title</Form.Label>
-                <Form.Control type='text' placeholder='enter tdo title' onChange={e=> setTitle (e.target.value)}/>
+                <Form.Control type='text' placeholder='Enter Todo Title' onChange={e=> setTitle (e.target.value)}/>
             </Form.Group>
             <Form.Group controlId='description'>
                 <Form.Label>Description</Form.Label>
-                <Form.Control type='text' placeholder='enter tdo title'onChange={e=> setDescription (e.target.value)}/>
+                <Form.Control type='text' placeholder='Enter Todo Description' onChange={e=> setDescription (e.target.value)}/>
             </Form.Group>
-            <Button variant='primary' type='submit' onClick={addTodoHandler}>Add Todo</Button>
+            <Button variant='primary' type='submit' onClick={addTodoHandler} className='my-2 btn-block'>Add Todo</Button>
         </Form>
         </div>
         
