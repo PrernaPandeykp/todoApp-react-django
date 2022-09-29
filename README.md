@@ -1,17 +1,21 @@
-# todoApp-react-django
+# [todoApp-react-django](https://github.com/PrernaPandeykp/todoApp-react-django)
+
 This Website is based on Django and React. It is responsive as well. <br>
 
 # Steps to run the website<br>
 Firstly clone the project using command: 
+
 ```
 git clone https://github.com/PrernaPandeykp/todoApp-react-django.git
 ```
+
 For Frontend:
 ``` 
 cd frontend
 npm install
 npm start
 ```
+
 For Backend:
 ```
 cd api
