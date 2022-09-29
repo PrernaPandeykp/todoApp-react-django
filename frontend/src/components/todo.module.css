@@ -1,0 +1,6 @@
+.svgImage{
+    height:30px;
+}
+.svgImage:hover{
+    cursor: pointer;
+}

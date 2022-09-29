@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.radio-div{
+  display: flex;
+}
+
+.radio-input  {
+  display:none;
+}
